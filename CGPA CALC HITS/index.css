@@ -4,42 +4,83 @@
     margin: 0%;
     padding: 0%;
 }
-h1
-{
-    text-align: center;
-    font: 200px;
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+  display: none;
 }
-
-#box {
-    padding:5px;
-    width:200px;
-    z-index:10;
-    position:relative; 
-    display: flex; 
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  #box form {
-   background:#006699;
-   padding:5px;
-   display:none;
-   position:absolute;
-   top:27px;
-  }
-  #button {
-    width:75px;
-    background:#006699;
-    color:#fff;
-    padding:3px 10px;
-    border:1px solid #006699;  
-    margin-bottom:15px;  
-    cursor:pointer;
-  }
-  input[type="submit"] {
-    background:none;
-    color:#fff;
-    border:none;
-    text-align:left;
-    cursor:pointer;
-  }
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+  display: none;
+}
+#myDIV1 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+  display: none;
+}
+#myDIV2 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+  display: none;
+}
+#myDIV3 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+  display: none;
+}
+#myDIV4 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+  display: none;
+}
+#myDIV5 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+  display: none;
+}
+#myDIV6 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+  display: none;
+}
+#myDIV7 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+  display: none;
+}
+#myDIV8 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+  display: none;
+}
