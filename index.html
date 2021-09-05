@@ -22,16 +22,14 @@
       <div class="mySlides fade">
         <h3>SEM 1 </h3>
            <label for="cars">MATRICES AND CALCULUS</label>
-           <select name="grade" id="grade1">
+           <select  id="grade1" class="five-cred gradeA" onchange="setvalue1()">
               <option value="default">Select grade</option>
-              <option value="S">S</option>
-              <option value="A">A</option>
-              <option value="B">B</option>
-              <option value="C">C</option>
-              <option value="D">D</option>
-              <option value="E">E</option>
-              <option value="F">F</option>
-              <option value="N">N</option>
+              <option value="10">S</option>
+              <option value="9">A</option>
+              <option value="8">B</option>
+              <option value="7">C</option>
+              <option value="6">D</option>
+              <option value="5">E</option>
               <option value="U">U</option>
               
             </select>
@@ -39,24 +37,22 @@
             <br>
       
             <label for="cars">	ENGINEERING MATERIALS</label>
-           <select name="grade" id="grade1">
-              <option value="default">Select grade</option>
-              <option value="S">S</option>
-              <option value="A">A</option>
-              <option value="B">B</option>
-              <option value="C">C</option>
-              <option value="D">D</option>
-              <option value="E">E</option>
-              <option value="F">F</option>
-              <option value="N">N</option>
-              <option value="U">U</option>
+           <select  id="grade1"  class="four-cred gradeB"  onchange="setvalue2()">
+            <option value="default">Select grade</option>
+            <option value="10">S</option>
+            <option value="9">A</option>
+            <option value="8">B</option>
+            <option value="7">C</option>
+            <option value="6">D</option>
+            <option value="5">E</option>
+            <option value="U">U</option>
               
             </select>
             <br>
             <br>
       
             <label for="cars">PROBLEM SOLVING USING C</label>
-           <select name="grade" id="grade1">
+           <select name="grade" id="grade1" onchange="setvalue3()">
               <option value="default">Select grade</option>
               <option value="S">S</option>
               <option value="A">A</option>
@@ -75,7 +71,7 @@
             <br>
       
             <label for="cars">PROFESSIONAL ENGLISH AND SOFT SKILLS</label>
-           <select name="grade" id="grade1">
+           <select name="grade" id="grade1" onchange="setvalue4()">
               <option value="default">Select grade</option>
               <option value="S">S</option>
               <option value="A">A</option>
@@ -91,7 +87,7 @@
             <br>  <br>
       
             <label for="cars">INTRODUCTION TO DIGITAL SYSTEMS</label>
-           <select name="grade" id="grade1">
+           <select name="grade" id="grade1" onchange="setvalue5()">
               <option value="default">Select grade</option>
               <option value="S">S</option>
               <option value="A">A</option>
@@ -107,7 +103,7 @@
             <br>  <br>
       
             <label for="cars">MATERIALS CHEMISTRY LAB</label>
-           <select name="grade" id="grade1">
+           <select name="grade" id="grade1" onchange="setvalue6()">
               <option value="default">Select grade</option>
               <option value="S">S</option>
               <option value="A">A</option>
@@ -886,6 +882,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
 </script>
 <script src="./CGPA CALC HITS/index.js"></script>
+<script src="./CGPA CALC HITS/calc.js"></script>
 
 </body>
 
