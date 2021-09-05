@@ -1,19 +1,13 @@
-console.log("working");
-var res1;
-var res2;
+console.log("calc.js loaded!");
 
-function setvalue1(){
-    console.log(document.querySelector(".gradeA").value);
-    res1=document.querySelector(".gradeA").value;
-    
-
+let res = [];
+const setValue = (id, className) => { //eg: id-grade1 className: gradeA
+    let tempRes = document.querySelector(`.${className}`).value;
+    console.log(tempRes, " grade");
+    res.push(tempRes);
+    console.table(res, "array of result");
 };
 
-function setvalue2(){
-console.log(document.querySelector(".gradeB").value);
-
-
-};
 
 
 
@@ -46,7 +40,7 @@ console.log(document.querySelector(".gradeB").value);
 // console.log(res);
 //     }
 
-    
+
 //     else if (x.classname==="four-cred") {
 
 //         var grade = document.querySelector(".four-cred");
@@ -54,8 +48,6 @@ console.log(document.querySelector(".gradeB").value);
 //         // console.log("grade score="+res+"   credit score="+res*5);
 //         console.log(res);
 //             }
-           
+
 
 // };
-
-
