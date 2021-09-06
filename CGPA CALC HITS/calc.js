@@ -3,9 +3,15 @@ console.log("calc.js loaded!");
 let res = [];
 const setValue = (id, className) => { //eg: id-grade1 className: gradeA
     let tempRes = document.querySelector(`.${className}`).value;
-    console.log(tempRes, " grade");
-    res.push(tempRes);
-    console.table(res, "array of result");
+    let obj = {
+        id,
+        grade: tempRes
+    };
+    res[id] = obj;
+    console.table(res);
+    console.log(res[1]);
+    console.log(res[1].id, "id");
+    console.log(res[1].grade, " grade");
 };
 
 
