@@ -1,17 +1,36 @@
 console.log("calc.js loaded!");
 
 let res = [];
-const setValue = (id, className) => { //eg: id-grade1 className: gradeA
-    let tempRes = document.querySelector(`.${className}`).value;
+let gpa;
+const setValue = (id, className, credit) => { //eg: id-grade1 className: gradeA
+    let tempRes = document.querySelector(`.${className}`).value*credit;
     let obj = {
         id,
         grade: tempRes
     };
     res[id] = obj;
-    console.table(res);
-    console.log(res[1]);
-    console.log(res[1].id, "id");
-    console.log(res[1].grade, " grade");
+    console.log(id +"-"+ res[id].grade);
+    
+
+
+    if(res.length==6){
+        // console.table(res);
+        // for(i=0;i<6;i++){
+        // console.table(res[i].grade);
+        
+        // }
+
+        gpa=(res[0].grade+res[1].grade+res[2].grade+res[3].grade+res[4].grade+res[5].grade)/21;
+        console.log("your gpa is"+gpa);
+
+
+        
+    }
+    
+    // console.table(res);
+    // console.log(res[1]);
+    // console.log(res[1].id);
+    // console.log(res[1].grade);
 };
 
 
