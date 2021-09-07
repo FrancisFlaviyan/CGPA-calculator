@@ -22,6 +22,7 @@ const setValue = (id, className, credit) => { //eg: id-grade1 className: gradeA
 
         gpa=(res[0].grade+res[1].grade+res[2].grade+res[3].grade+res[4].grade+res[5].grade)/21;
         console.log("your gpa is"+gpa);
+        alert("your gpa is  "+gpa);
 
 
         
