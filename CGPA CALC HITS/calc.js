@@ -1,7 +1,7 @@
 console.log("calc.js loaded!");
 
 let res = [];
-let gpa;
+let gpa=0;
 const setValue = (id, className, credit) => { //eg: id-grade1 className: gradeA
     let tempRes = document.querySelector(`.${className}`).value*credit;
     let obj = {
@@ -10,19 +10,27 @@ const setValue = (id, className, credit) => { //eg: id-grade1 className: gradeA
     };
     res[id] = obj;
     console.log(id +"-"+ res[id].grade);
-    
+
+    // for(i=0;i<res.length;i++) { res[i].grade}
+
+  
 
 
-    if(res.length==6){
-        // console.table(res);
-        // for(i=0;i<6;i++){
-        // console.table(res[i].grade);
+    if(res.length<0){
+
+        for(i=0;i<res.length;i++){
         
-        // }
+            gpa+=res[i].grade};
 
-        gpa=(res[0].grade+res[1].grade+res[2].grade+res[3].grade+res[4].grade+res[5].grade)/21;
+            gpa/=22;
+            gpa=gpa.toFixed(2);
+        
+       
+        
         console.log("your gpa is"+gpa);
         alert("your gpa is  "+gpa);
+
+        if(res[i].grade){gpa+=res[i].grade}
 
 
         
