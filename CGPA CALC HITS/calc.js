@@ -14,27 +14,37 @@ const setValue = (id, className, credit) => { //eg: id-grade1 className: gradeA
     // for(i=0;i<res.length;i++) { res[i].grade}
 
   
+    if (res.length > 0) {
+        for (i = 0; i < res.length; i++) {
+            if (res[i].grade) {
+                gpa += res[i].grade
+            }
+        };
+        gpa /= 22;
+        gpa = gpa.toFixed(2);
+        console.log("your gpa is" + gpa);
+        // alert("your gpa is  " + gpa);
+    }
 
+    // if(res.length>0){
 
-    if(res.length<0){
-
-        for(i=0;i<res.length;i++){
+    //     for(i=0;i<res.length;i++){
         
-            gpa+=res[i].grade};
+    //         gpa+=res[i].grade};
 
-            gpa/=22;
-            gpa=gpa.toFixed(2);
+    //         gpa/=22;
+    //         gpa=gpa.toFixed(2);
         
        
         
-        console.log("your gpa is"+gpa);
-        alert("your gpa is  "+gpa);
+    //     console.log("your gpa is"+gpa);
+    //     // alert("your gpa is  "+gpa);
 
-        if(res[i].grade){gpa+=res[i].grade}
+    //     if(res[i].grade){gpa+=res[i].grade}
 
 
         
-    }
+    // }
     
     // console.table(res);
     // console.log(res[1]);
