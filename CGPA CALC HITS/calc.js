@@ -50,6 +50,7 @@ const calc=()=>{
     };
     gpa[3]/=21.5;
 
+    
 
     // sem 5 gpa
     for(i=0;i<7;i++){
