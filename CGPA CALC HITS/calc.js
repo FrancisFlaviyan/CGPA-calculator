@@ -8,6 +8,7 @@ let credits=[17.5,24.5,22,22,23,25,23,8];
 
 
 
+
 const setValue = (index, id, credit) => { 
      
     res[index] =  document.querySelector(`#${id}`).value*credit;
@@ -29,14 +30,13 @@ const calc=()=>{
     for(i=0;i<7;i++){
         gpa[0]+=res[i]
     };
-    gpa[0]/=credits[0];
 
 
     // sem 2 gpa
     for(i=7;i<17;i++){
         gpa[1]+=res[i]
     };
-    gpa[1]/=credits[1]; 
+
 
 
     // sem 3 gpa
@@ -81,18 +81,49 @@ const calc=()=>{
     };
     gpa[7]/=credits[7];
 
+
+    for(i=2;i<8;i++){
+        gpa[i]=0;
+    };
+
     // Decimal places
-    for(i=0;i<8;i++){
-    gpa[i]=gpa[i].toFixed(2); }
+    // for(i=0;i<8;i++){
+    // gpa[i]=gpa[i].toFixed(2); }
     //
 
 
-  if(isNaN(gpa[1])){
-      alert("fuck off");
-  }
+     //cgpa
 
-  else{
-    alert(gpa[1]);}
+     let cgpa=0;
+
+var cgpaNum=0;
+var cgpaDen=0;
+
+
+     for(i=0;i<7;i++){
+    
+
+        if(!isNaN(gpa[i])&&gpa[i]!=0) {
+            cgpaNum+=gpa[i];
+            cgpaDen+=credits[i];
+        }
+     }
+
+     cgpa=cgpaNum/cgpaDen;
+     cgpa=cgpa.toFixed(2);
+
+     alert(cgpa);
+
+
+
+
+
+//   if(isNaN(gpa[1])){
+//       alert("fuck off");
+//   }
+
+//   else{
+//     alert(gpa[1]);}
 
 };
 
