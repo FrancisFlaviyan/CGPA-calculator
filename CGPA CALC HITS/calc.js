@@ -118,7 +118,7 @@ var cgpaDen=0;
      cgpa=cgpaNum/cgpaDen;
      cgpa=cgpa.toFixed(2);
 
-     alert(cgpa);
+    //  alert("your sem 1 gpa is: "+gpa[0]/credits[0]+"   your sem 2 gpa is "+gpa[1]/credits[1]+"  and  your cgpa is"+ cgpa);
 
 
 
